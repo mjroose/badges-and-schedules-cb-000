@@ -16,6 +16,7 @@ def assign_rooms(names)
   message_array
 end
 
-def printer(badges, room_assignments)
-  # should puts the badge and room assignment of each speakers
+def printer(names)
+  puts(batch_badge_creator(names))
+  puts(assign_rooms(names))
 end
