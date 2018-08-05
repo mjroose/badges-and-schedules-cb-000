@@ -3,7 +3,9 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  #takes an array of names and calls #badge_maker for each name
+  names.collect do |name|
+    badge_maker(name)
+  end
 end
 
 def assign_rooms(names)
